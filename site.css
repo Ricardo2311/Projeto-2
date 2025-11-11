@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  line-height: 1.6;
+  background: #f5f5f5;
+  color: #333;
+  padding: 10px;
+}
+
+header {
+  background: #003366;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 10px;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+section {
+  padding: 20px;
+  background: white;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 8px;
+}
+
+.bloco-noticias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.noticia {
+  width: 300px;
+  background: #fff;
+  border-radius: 8px;
+  text-align: center;
+  
+}
+
+.noticia img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+}
+
+.noticia h3 {
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.tabelas-flex {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.tabelabr {
+  max-width: 400px;
+}
+
+.tabelabr img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.equipe-jornalistas {
+  
+  display: flex;
+  justify-content: space-around; 
+  flex-wrap: wrap; 
+  margin-top: 20px;
+}
+
+.jornalista {
+  text-align: center;
+  width: 150px; 
+  margin-bottom: 20px;
+}
+
+.jornalista img {
+  width: 100px;
+  height: 100px;
+}
+
+.jornalista a {
+  color: blue;
+  text-decoration: none;
+}
+
+.onde-encontrar {
+  max-width: 800px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.onde-encontrar h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.onde-encontrar ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.onde-encontrar li {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.conteudo-horizontal {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap; 
+  padding: 20px;
+}
+
+.conteudo-horizontal section {
+  flex: 1;
+  min-width: 280px; 
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f8f8f8;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  box-sizing: border-box;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+input, textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: #003366;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  background: #222;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  section {
+    margin: 10px;
+  box-sizing: border-box;
+  }
+}

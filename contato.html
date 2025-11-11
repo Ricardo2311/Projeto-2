@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Agência Voyager - Contato</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header class="cabecalho-site">
+		<div class="conteiner cabecalho-interno">
+			<a href="index.html" class="logomarca">Agência <strong>Voyager</strong></a>
+			<button id="alternarTema" class="botao botao-fantasma" aria-label="Alternar tema">🌙</button>
+			<nav aria-label="principal">
+				<ul class="navegacao">
+					<li><a class="link-navegacao" href="index.html">Início</a></li>
+					<li><a class="link-navegacao" href="destinos.html">Destinos</a></li>
+					<li><a class="link-navegacao active" href="contato.html">Contato</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section class="conteiner secao">
+			<header class="cabecalho-secao">
+				<h1>Fale com a gente</h1>
+				<p>Tire dúvidas, solicite orçamento e receba um atendimento personalizado.</p>
+			</header>
+
+			<div class="layout-contato">
+				<form id="contactForm" novalidate class="cartao cartao-formulario" aria-labelledby="formTitle">
+					<h2 id="formTitle">Solicitar orçamento</h2>
+					<div class="campo-formulario">
+						<label for="nome">Nome completo</label>
+						<input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+						<small class="erro" id="error-nome" aria-live="polite"></small>
+					</div>
+					<div class="campo-formulario">
+						<label for="email">E-mail</label>
+						<input type="email" id="email" name="email" placeholder="voce@email.com" required>
+						<small class="erro" id="error-email" aria-live="polite"></small>
+					</div>
+					<div class="campo-formulario">
+						<label for="destino">Destino de interesse</label>
+						<select id="destino" name="destino" required>
+							<option value="">Selecione</option>
+							<option>Foz do Iguaçu</option>
+							<option>Gramado</option>
+							<option>Lisboa</option>
+							<option>Fernando de Noronha</option>
+						</select>
+						<small class="erro" id="error-destino" aria-live="polite"></small>
+					</div>
+					<div class="campo-formulario">
+						<label for="data">Data aproximada</label>
+						<input type="date" id="data" name="data" required>
+						<small class="erro" id="error-data" aria-live="polite"></small>
+					</div>
+					<div class="campo-formulario">
+						<label for="mensagem">Mensagem</label>
+						<textarea id="mensagem" name="mensagem" rows="4" placeholder="Conte detalhes importantes (número de pessoas, preferências...)"></textarea>
+					</div>
+					<div class="acoes-formulario">
+						<button type="submit" class="botao botao-primario">Enviar</button>
+						<button type="reset" class="botao botao-fantasma">Limpar</button>
+					</div>
+					<p class="sucesso" id="successMessage" role="status" aria-live="polite" hidden>Mensagem enviada! Em breve entraremos em contato.</p>
+				</form>
+
+				<aside class="cartao cartao-contato">
+					<h2>Informações</h2>
+					<ul class="lista-contato">
+						<li><strong>E-mail:</strong> contato@voyager.com</li>
+						<li><strong>Telefone:</strong> (11) 99999-0000</li>
+						<li><strong>Endereço:</strong> Av. das Viagens, 123 - Centro</li>
+						<li><strong>Horário:</strong> Seg a Sex, 9h às 18h</li>
+					</ul>
+					<p>Siga-nos nas redes sociais e receba ofertas exclusivas.</p>
+				</aside>
+			</div>
+		</section>
+	</main>
+
+	<footer class="rodape-site">
+		<div class="conteiner rodape-interno">
+			<p>&copy; <span id="anoAtual"></span> Agência Voyager. Todos os direitos reservados.</p>
+			<ul class="links-rodape">
+				<li><a href="index.html">Início</a></li>
+				<li><a href="destinos.html">Destinos</a></li>
+				<li><a href="contato.html">Contato</a></li>
+			</ul>
+		</div>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>

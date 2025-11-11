@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Agência Voyager - Destinos</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header class="cabecalho-site">
+		<div class="conteiner cabecalho-interno">
+			<a href="index.html" class="logomarca">Agência <strong>Voyager</strong></a>
+			<button id="alternarTema" class="botao botao-fantasma" aria-label="Alternar tema">🌙</button>
+			<nav aria-label="principal">
+				<ul class="navegacao">
+					<li><a class="link-navegacao" href="index.html">Início</a></li>
+					<li><a class="link-navegacao active" href="destinos.html">Destinos</a></li>
+					<li><a class="link-navegacao" href="contato.html">Contato</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section class="conteiner secao">
+			<header class="cabecalho-secao">
+				<h1>Destinos populares</h1>
+				<p>Inspire-se com nossas seleções e encontre sua próxima aventura.</p>
+			</header>
+
+			<ul class="grade-destinos">
+				<li class="cartao-destino">
+					<img src="foz do iguacu.jpg" alt="Cataratas do Iguaçu vista panorâmica">
+					<div class="corpo-destino">
+						<h2>Foz do Iguaçu</h2>
+						<p>Uma das 7 maravilhas naturais do mundo, com trilhas e passeios incríveis.</p>
+						<a class="botao botao-pequeno" href="contato.html">Quero saber mais</a>
+					</div>
+				</li>
+				<li class="cartao-destino">
+					<img src="lisboa.jpg" alt="Arquitetura europeia em Lisboa">
+					<div class="corpo-destino">
+						<h2>Lisboa</h2>
+						<p>História, gastronomia e miradouros inesquecíveis na capital portuguesa.</p>
+						<a class="botao botao-pequeno" href="contato.html">Quero saber mais</a>
+					</div>
+				</li>
+				<li class="cartao-destino">
+					<img src="gramado.jpg" alt="Montanhas com neve ao fundo e pinheiros">
+					<div class="corpo-destino">
+						<h2>Gramado</h2>
+						<p>Clima europeu, chocolate artesanal e belos parques na Serra Gaúcha.</p>
+						<a class="botao botao-pequeno" href="contato.html">Quero saber mais</a>
+					</div>
+				</li>
+				<li class="cartao-destino">
+					<img src="fernando.jpg" alt="Praia paradisíaca com mar azul">
+					<div class="corpo-destino">
+						<h2>Fernando de Noronha</h2>
+						<p>Natureza preservada, mergulhos e praias entre as mais bonitas do mundo.</p>
+						<a class="botao botao-pequeno" href="contato.html">Quero saber mais</a>
+					</div>
+				</li>
+			</ul>
+		</section>
+	</main>
+
+	<footer class="rodape-site">
+		<div class="conteiner rodape-interno">
+			<p>&copy; <span id="anoAtual"></span> Agência Voyager. Todos os direitos reservados.</p>
+			<ul class="links-rodape">
+				<li><a href="index.html">Início</a></li>
+				<li><a href="destinos.html">Destinos</a></li>
+				<li><a href="contato.html">Contato</a></li>
+			</ul>
+		</div>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>
+
+

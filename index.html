@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Agência Voyager - Início</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header class="cabecalho-site">
+		<div class="conteiner cabecalho-interno">
+			<a href="index.html" class="logomarca">Agência <strong>Voyager</strong></a>
+			<button id="alternarTema" class="botao botao-fantasma" aria-label="Alternar tema">🌙</button>
+			<nav aria-label="principal">
+				<ul class="navegacao">
+					<li><a class="link-navegacao active" href="index.html">Início</a></li>
+					<li><a class="link-navegacao" href="destinos.html">Destinos</a></li>
+					<li><a class="link-navegacao" href="contato.html">Contato</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section class="destaque">
+			<div class="conteiner destaque-interno">
+				<div class="destaque-texto">
+					<h1>Descubra o mundo com a Voyager</h1>
+					<p>Pacotes personalizados, experiências únicas e suporte completo para sua próxima viagem.</p>
+					<a class="botao botao-primario" href="destinos.html">Explorar destinos</a>
+				</div>
+				<div class="destaque-imagem" role="img" aria-label="Foto de pessoas viajando ao pôr do sol"></div>
+			</div>
+		</section>
+
+		<section class="conteiner secao">
+			<header class="cabecalho-secao">
+				<h2>Destino em destaque</h2>
+				<p>Use as setas para trocar o destino.</p>
+			</header>
+			<div class="cartao">
+				<div class="acoes-formulario">
+					<button id="anteriorSlide" class="botao botao-fantasma" aria-label="Anterior" title="Anterior">←</button>
+					<button id="proximoSlide" class="botao botao-primario" aria-label="Próximo" title="Próximo">→</button>
+				</div>
+				<img id="cartaoSlideImagem" alt="Destino" style="width:100%;max-height:220px;object-fit:cover;border-radius:8px;">
+				<h3 id="cartaoSlideTitulo"></h3>
+				<p id="cartaoSlideDescricao"></p>
+			</div>
+		</section>
+
+		<section class="conteiner secao">
+			<header class="cabecalho-secao">
+				<h2>Por que viajar com a gente?</h2>
+				<p>Serviços pensados para você aproveitar do início ao fim.</p>
+			</header>
+			<div class="grade-recursos">
+				<article class="cartao">
+					<h3>Atendimento 24/7</h3>
+					<p>Equipe disponível a qualquer hora para apoiar sua jornada.</p>
+				</article>
+				<article class="cartao">
+					<h3>Roteiros sob medida</h3>
+					<p>Montamos a viagem perfeita de acordo com seu perfil.</p>
+				</article>
+				<article class="cartao">
+					<h3>Melhor custo-benefício</h3>
+					<p>Parcerias exclusivas para garantir os melhores preços.</p>
+				</article>
+			</div>
+		</section>
+
+		<section class="conteiner secao">
+			<header class="cabecalho-secao">
+				<h2>Ofertas em destaque</h2>
+				<p>Alguns pacotes selecionados para você.</p>
+			</header>
+			<div class="ofertas">
+				<table class="tabela">
+					<thead>
+						<tr>
+							<th>Destino</th>
+							<th>Duração</th>
+							<th>Preço</th>
+							<th>Ação</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Foz do Iguaçu</td>
+							<td>4 noites</td>
+							<td>R$ 1.890</td>
+							<td><a class="botao botao-pequeno" href="contato.html">Reservar</a></td>
+						</tr>
+						<tr>
+							<td>Gramado</td>
+							<td>3 noites</td>
+							<td>R$ 1.250</td>
+							<td><a class="botao botao-pequeno" href="contato.html">Reservar</a></td>
+						</tr>
+						<tr>
+							<td>Lisboa</td>
+							<td>7 noites</td>
+							<td>R$ 5.990</td>
+							<td><a class="botao botao-pequeno" href="contato.html">Reservar</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+	</main>
+
+	<footer class="rodape-site">
+		<div class="conteiner rodape-interno">
+			<p>&copy; <span id="anoAtual"></span> Agência Voyager. Todos os direitos reservados.</p>
+			<ul class="links-rodape">
+				<li><a href="index.html">Início</a></li>
+				<li><a href="destinos.html">Destinos</a></li>
+				<li><a href="contato.html">Contato</a></li>
+			</ul>
+		</div>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>
